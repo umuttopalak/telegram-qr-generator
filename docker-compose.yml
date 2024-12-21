@@ -3,8 +3,8 @@ version: '3.8'
 services:
   bot:
     build: .
-    env_file:
-      - .env
+    environment:
+      - BOT_TOKEN
     restart: always
     tty: true
     stdin_open: true
